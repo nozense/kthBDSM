@@ -1,0 +1,59 @@
+
+#dayLabel {
+  fill: fb-extra-dark-gray;
+    font-size: 100;
+  font-family: System-Bold;
+}
+#dayLabel2 {
+  fill: fb-extra-dark-gray;
+    font-size: 100;
+  font-family: System-Bold;
+}
+
+#hoursP {
+  
+width: 6;
+ height: 45; 
+  fill: #009EFF;
+
+}
+
+#minsP {
+  width: 5;
+  height: 70;
+  fill: #3FB5FE;
+  
+}
+
+#secsP{
+   width: 3;
+  height: 80; 
+  fill: #9AD9FF;
+  
+}
+#clockLabel{
+  
+fill: cyan;
+  text-length:20;
+}
+
+#hrLabel {
+  fill: cyan;
+}
+#stepLabel {
+  fill: cyan;
+  text-length: 20;
+}
+#floorLabel {
+  fill: cyan;
+}
+#batLabel {
+  fill: cyan;
+}
+#dateLabel {
+  fill: cyan;
+}
+#monLabel {
+  fill: cyan;
+}
+
