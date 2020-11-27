@@ -1,42 +1,33 @@
 
 #dayLabel {
   fill: fb-extra-dark-gray;
-    font-size: 100;
+  font-size: 80;
   font-family: System-Bold;
 }
-#dayLabel2 {
+#zonLabel {
   fill: fb-extra-dark-gray;
-    font-size: 100;
+  font-size: 60;
   font-family: System-Bold;
 }
-
-#hoursP {
-  
-width: 6;
- height: 45; 
+#hoursP { 
+  width: 6;
+  height: 45; 
   fill: #009EFF;
-
 }
-
 #minsP {
   width: 5;
   height: 70;
-  fill: #3FB5FE;
-  
+  fill: #3FB5FE; 
 }
-
 #secsP{
-   width: 3;
+  width: 3;
   height: 80; 
-  fill: #9AD9FF;
-  
+  fill: #9AD9FF; 
 }
 #clockLabel{
-  
-fill: cyan;
+  fill: cyan;
   text-length:20;
 }
-
 #hrLabel {
   fill: cyan;
 }

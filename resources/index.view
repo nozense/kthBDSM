@@ -5,9 +5,7 @@
   <g id="hours" pointer-events="visible" transform="translate(70%,70%)">
     <rect id="hoursP" x="$-6" y="-65"  />
   </g>
-  
-  
-
+ 
   <text id="cl" x="7%" y="20%" fill="fb-slate"text-anchor= "middle" text-buffer="1">K</text>
   <text id="fl" x="7%" y="30%"fill="fb-slate"text-anchor= "middle" text-buffer="1">T</text>
   <text id="hl" x="7%" y="40%"fill="fb-slate"text-anchor= "middle" text-buffer="1">H</text>
@@ -17,19 +15,17 @@
   <text id="sl" x="7%" y="75%"fill="fb-slate"text-anchor= "middle" text-buffer="1">S</text>
   <text id="ml" x="7%" y="85%"fill="fb-slate"text-anchor= "middle" text-buffer="1">M</text>
   
-  
   <text id="clockLabel" x="14%" y="20%" />
   <text id="floorLabel" x="14%" y="30%" />
   <text id="hrLabel" x="14%" y="40%" />
 
   <text id="batLabel" x="14%" y="55%" />
   <text id="dateLabel" x="14%" y="65%" />
-  <text id="stepLabel" x="14%" y="75%" />
+  <text id="stepLabel" x="14%" y="75%" text-buffer="20"/>
   <text id="monLabel" x="14%" y="85%" />
   
-  
-  <text id="dayLabel" x="60%" y="35%" text-anchor= "middle"  fill="fb-extra-dark-gray" text-buffer="1" />
-  <text id="dayLabel2" x="70%" y="40%" text-anchor= "middle"  fill="fb-extra-dark-gray" text-buffer="1"/>
+  <text id="dayLabel" x="70%" y="28%" text-anchor= "end"  fill="fb-extra-dark-gray" text-buffer="1" />
+  <text id="zonLabel" x="67%" y="33%" text-anchor= "start"  fill="fb-extra-dark-gray" text-buffer="20"/>
   
 </svg>
 
