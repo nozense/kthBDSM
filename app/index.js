@@ -30,21 +30,26 @@ if (HeartRateSensor) {
   });
   hrm.start();
 }
-
-if (appbit.permissions.granted("access_activity")) {
-   console.log(`${today.adjusted.steps} Steps`);
-   stepLabel.text=`${today.adjusted.steps}`;
-   if (today.local.elevationGain !== undefined) {
-     console.log(`${today.adjusted.elevationGain} Floor(s)`);
-      floorLabel.text=`${today.adjusted.elevationGain}`;
-   }
+function getSteps(){
+ if (appbit.permissions.granted("access_activity")) {
+    console.log(`${today.adjusted.steps} Steps`);
+    stepLabel.text=`${today.adjusted.steps}`;
+    if (today.local.elevationGain !== undefined) {
+      console.log(`${today.adjusted.elevationGain} Floor(s)`);
+       floorLabel.text=`${today.adjusted.elevationGain}`;
+    }
+ }
 }
 
-batLabel.text = `${Math.floor(battery.chargeLevel)}`;
+function getBat(){
+  batLabel.text = `${Math.floor(battery.chargeLevel)}`;
+}
 
-console.log(`${today.adjusted.activeZoneMinutes.total}`);
-zonLabel.text = `${today.adjusted.activeZoneMinutes.total}`;
-
+function getZone(){
+  console.log(`${today.adjusted.activeZoneMinutes.total}`);
+  zonLabel.text = `${today.adjusted.activeZoneMinutes.total}`;
+}
+ 
 let hourHand = document.getElementById("hours");
 let minHand = document.getElementById("mins");
 
@@ -76,6 +81,9 @@ function updateClock() {
   let zhours = zeroPad(tfhours);
   let zmins = zeroPad(mins);
   let dagen = today.getDay();
+  getSteps();
+  getBat();
+  getZone();
   clockLabel.text = (`${zhours}${zmins}`);
   dateLabel.text = `${today.getDate()}`;
   monLabel.text = `${today.getMonth() +1}`;
